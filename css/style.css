@@ -8,7 +8,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    max-width: 100%;
+    /* max-width: 100%; */
 }
 
 body {
@@ -39,13 +39,14 @@ body {
 /* Navbar Styling */
 .navbar-under-ribbon {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 200px;
-    padding: 80px;
-    font-size: 30px;
+    padding: 100px 100px 100px 100px;
+    font-size: 2.2rem;
+    margin-top: 50px;
 }
 
 .navbar-under-ribbon nav ul li {
@@ -54,7 +55,7 @@ body {
 }
 
 .navbar-under-ribbon nav ul li a {
-    font-size: 20px;
+    font-size: 1.2rem;
 }
 .navbar-under-ribbon h1 span {
     font-family: 'Bebas Neue';
@@ -66,24 +67,107 @@ body {
 
 .menu {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 300px;
+    padding: 100px;
+    margin: 80px 0px 80px 0px;
+}
+
+.menu h2 {
+    font-size: 3rem;
+}
+
+.menu p {
+    font-size: 1.2rem;
+}
+
+.menu a {
+    font-size: 1.2rem;
+    padding: 5px;
 }
 
 /* Shots Styling (Pictures) */
 
-.shots {
+.shots-header {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.shots h2 {
+    font-size: 3rem;
+    padding: 10px;
+}
+.shots p {
+    font-size: 1.4rem;
+    padding: 10px;
+}
+
+.column {
+    display: flex;
+    flex-direction:column-reverse;
+    align-items: center;
+    justify-content: center; 
+}
+
+.column a img {
+    width: 500px;
+    border-radius: 50% 50% 5% 5%;
+    padding: 10px 4px 0px 4px;
+}
+
+.row {
+    display: flex;
+    flex-direction:row;
     align-items: center;
     justify-content: center;   
 }
 
-.shots div a img {
+.row a img {
     width: 300px;
-    border-radius: 5%;
-    display: row;
+    border-radius: 20%;
+    padding: 50px 4px 0px 4px;
+}
+
+/* About Styling */
+
+.about-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-images {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-images div img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
     padding: 0px;
+    margin: 15px;
+}
+
+.about-images div h4, p {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 1px;
+}
+
+.about-header h4 span {
+    color: var(--text-primary);
+}
+
+.about-header h4 {
+    font-size: 1.4rem;
 }
