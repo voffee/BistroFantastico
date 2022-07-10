@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap');
 
 :root {
-    --text-primary: chocolate;
+    --text-primary: #FF1493;
 }
 
 * {
@@ -59,7 +59,7 @@ body {
 }
 .navbar-under-ribbon h1 span {
     font-family: 'Bebas Neue';
-    color: #FF1493;
+    color: var(--text-primary);
 
 }
 
@@ -139,6 +139,21 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 100px;
+}
+
+.about-header h4 span {
+    color: var(--text-primary);
+}
+
+.about-header h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.about-header p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
 }
 
 .about-images {
@@ -162,12 +177,4 @@ body {
     align-items: center;
     justify-content: center;
     margin: 1px;
-}
-
-.about-header h4 span {
-    color: var(--text-primary);
-}
-
-.about-header h4 {
-    font-size: 1.4rem;
 }
