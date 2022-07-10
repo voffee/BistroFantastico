@@ -30,4 +30,30 @@ body {
 .ribbon a {
     color: #333333;
     font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar-under-ribbon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+    padding: 80px;
+    font-size: 30px;
+}
+
+.navbar-under-ribbon nav ul li {
+    list-style: none;
+    text-decoration: none;
+}
+
+.navbar-under-ribbon nav ul li a {
+    font-size: 20px;
+}
+.navbar-under-ribbon h1 span {
+    font-family: 'Bebas Neue';
+    color: #FF00DE;
+
 }
